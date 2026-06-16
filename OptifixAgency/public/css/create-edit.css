@@ -1,0 +1,90 @@
+body {
+    background: #0E2148;
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+    font-size: 1.15rem;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.tarjeta-formulario {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(14,33,72,0.18);
+    max-width: 480px;
+    margin: 3.5rem auto 2.5rem auto;
+    padding: 2.5rem 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.titulo-formulario {
+    color: #483AA0;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    text-align: center;
+}
+
+.etiqueta-formulario {
+    color: #483AA0;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    letter-spacing: 0.2px;
+}
+
+.campo-formulario, .area-formulario, .select-formulario {
+    width: 100%;
+    padding: 0.7em 1em;
+    border-radius: 10px;
+    border: 1.5px solid #7965C1;
+    background: #f7f8fa;
+    color: #0E2148;
+    font-size: 1.08rem;
+    font-family: inherit;
+    margin-bottom: 0.7rem;
+    transition: border 0.18s, box-shadow 0.18s;
+}
+.campo-formulario:focus, .area-formulario:focus, .select-formulario:focus {
+    border-color: #21e6c1;
+    outline: none;
+    box-shadow: 0 0 0 2px #21e6c155;
+}
+
+.area-formulario {
+    min-height: 90px;
+    resize: vertical;
+}
+
+.acciones-formulario {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1.2rem;
+}
+
+.boton-formulario {
+    background: linear-gradient(90deg, #483AA0 0%, #7965C1 60%, #E3D095 100%);
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    padding: 0.7em 2.2em;
+    font-size: 1.08em;
+    box-shadow: 0 2px 8px rgba(72,58,160,0.08);
+    letter-spacing: 0.5px;
+    transition: background 0.18s, color 0.18s, transform 0.15s;
+    text-shadow: 0 2px 8px #fff2;
+    cursor: pointer;
+}
+.boton-formulario:hover {
+    background: linear-gradient(90deg, #E3D095 0%, #7965C1 60%, #483AA0 100%);
+    color: #fff;
+    transform: translateY(-2px) scale(1.04);
+}
+
+@media (max-width: 600px) {
+    .tarjeta-formulario {
+        padding: 1.2rem 0.5rem 1rem 0.5rem;
+        max-width: 98vw;
+    }
+}

@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+
+body {
+    background: #0E2148;
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+    font-size: 1.15rem;
+}
+.bg-dark-blue {
+    background: #162447;
+}
+.card-custom {
+    background: #1f4068;
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(22,36,71,0.15);
+    border: none;
+    transition: transform 0.2s;
+}
+.card-custom:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(22,36,71,0.25);
+}
+.badge-custom {
+    background: #1b1b2f;
+    color: #21e6c1;
+    font-size: 0.9rem;
+    padding: 0.5em 1em;
+    border-radius: 12px;
+}
+.btn-primary, .btn-outline-primary {
+    background: #1b1b2f;
+    border-color: #21e6c1;
+    color: #21e6c1;
+}
+.btn-primary:hover, .btn-outline-primary:hover {
+    background: #21e6c1;
+    color: #1b1b2f;
+    border-color: #21e6c1;
+}
+.card-title {
+    color: #21e6c1;
+}
+.card-img-top {
+    background: #162447;
+}

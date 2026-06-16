@@ -1,0 +1,83 @@
+/* Paleta de colores:
+   Azul oscuro: #0E2148
+   Morado: #483AA0
+   Lila: #7965C1
+   Amarillo claro: #E3D095
+*/
+
+body {
+    background: #0E2148;
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+    font-size: 1.15rem;
+}
+
+.fondo-tarjeta-noticia {
+    background: #ffffff;
+    color: #0E2148;
+    border-radius: 18px;
+}
+
+.imagen-noticia {
+    height: 350px;
+    object-fit: cover;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+
+.etiqueta-estado {
+    background: #483AA0;
+    color: #fff;
+    font-size: 1em;
+    border-radius: 12px;
+    padding: 0.4em 1em;
+}
+
+.etiqueta-categoria {
+    background: #7965C1;
+    color: #fff;
+    font-size: 1em;
+    border-radius: 12px;
+    padding: 0.4em 1em;
+}
+
+.titulo-noticia {
+    color: #0E2148;
+}
+
+.contenido-noticia {
+    color: #0E2148;
+    font-size: 1.1em;
+}
+
+.resumen-noticia {
+    color: #0E2148;
+    opacity: 0.8;
+}
+
+.autor-noticia {
+    color: #0E2148;
+}
+
+.fecha-noticia {
+    color: #0E2148;
+}
+
+.boton-volver {
+    background: #483AA0;
+    color: #fff;
+    border: none;
+}
+.boton-volver:hover {
+    background: #7965C1;
+    color: #fff;
+}
+
+.boton-editar {
+    background: #E3D095;
+    color: #0E2148;
+    border: none;
+}
+.boton-editar:hover {
+    background: #7965C1;
+    color: #fff;
+}

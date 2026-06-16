@@ -1,0 +1,214 @@
+html, body {
+    height: 100%;
+
+}
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(120deg, #0E2148 0%, #483AA0 100%);
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+    font-size: 1.15rem;
+}
+
+.fondo-login {
+    min-height: 100vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    padding-top: 80px;
+}
+
+.contenedor-login {
+    background: rgba(14, 33, 72, 0.85);
+    border-radius: 22px;
+    box-shadow: 0 8px 40px rgba(14,33,72,0.25);
+    padding: 2.5rem 2.5rem 2rem 2.5rem;
+    width: 100%;
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+
+}
+
+.titulo-login {
+    color: #fff;
+    font-size: 2.1rem;
+    font-weight: 700;
+    margin-bottom: 2.2rem;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.campo-login {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: #fff2;
+    border-radius: 12px;
+    margin-bottom: 1.3rem;
+    padding: 0.6em 1em;
+    box-shadow: 0 2px 8px #0e21481a;
+}
+.campo-login input {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    font-size: 1.08rem;
+    flex: 1;
+    padding: 0.5em 0.7em;
+    font-family: inherit;
+}
+.campo-login input::placeholder {
+    color: #E3D095cc;
+    font-style: italic;
+}
+.icono-campo {
+    color: #E3D095;
+    font-size: 1.2em;
+    margin-right: 0.7em;
+}
+
+.opciones-login {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.2rem;
+    font-size: 0.98rem;
+    color: #fff;
+}
+.recordar input[type="checkbox"] {
+    accent-color: #E3D095;
+    margin-right: 0.3em;
+}
+
+.boton-login {
+    width: 100%;
+    background: linear-gradient(90deg, #483AA0 0%, #7965C1 60%, #E3D095 100%);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.15rem;
+    border: none;
+    border-radius: 12px;
+    padding: 0.9em 0;
+    margin-top: 0.5rem;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 4px 24px rgba(72,58,160,0.13);
+    letter-spacing: 0.5px;
+    transition: background 0.18s, color 0.18s, transform 0.15s;
+    text-shadow: 0 2px 8px #fff2;
+    cursor: pointer;
+}
+.boton-login:hover {
+    background: linear-gradient(90deg, #E3D095 0%, #7965C1 60%, #483AA0 100%);
+    color: #fff;
+    transform: translateY(-2px) scale(1.04);
+    text-shadow: 0 2px 12px #483AA044;
+}
+
+.footer-login {
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 0.7rem;
+}
+
+.enlace-login {
+    color: #E3D095;
+    text-decoration: none;
+    transition: color 0.18s;
+}
+.enlace-login:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.registro-login {
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 0.7rem;
+}
+
+.alerta-login-error {
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #fff;
+    background: #483AA0;
+    border-radius: 8px;
+    padding: 0.7em 1em;
+    font-size: 1.05em;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+}
+
+@media (max-width: 600px) {
+    .contenedor-login {
+        padding: 1.2rem 0.5rem 1rem 0.5rem;
+        max-width: 98vw;
+    }
+}
+
+.usuarios-container {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.usuarios-titulo {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    font-size: 2.1rem;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.usuarios-table-responsive {
+    border-radius: 16px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 24px rgba(14,33,72,0.13);
+}
+
+.usuarios-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+.usuarios-table thead {
+    background: #483AA0;
+    color: #fff;
+}
+.usuarios-table th, .usuarios-table td {
+    padding: 1rem 1.2rem;
+    text-align: left;
+    font-size: 1.08rem;
+}
+.usuarios-table tbody tr:nth-child(even) {
+    background: #f6f6fa;
+}
+.usuarios-table tbody tr:hover {
+    background: #E3D09522;
+    transition: background 0.18s;
+}
+@media (max-width: 700px) {
+    .usuarios-container {
+        padding: 0 0.5rem;
+    }
+    .usuarios-titulo {
+        font-size: 1.3rem;
+    }
+    .usuarios-table th, .usuarios-table td {
+        padding: 0.5rem 0.5rem;
+        font-size: 0.98rem;
+    }
+}
+

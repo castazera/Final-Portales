@@ -1,0 +1,199 @@
+/* Paleta de colores:
+   Fondo principal: #0E2148
+   Morado: #483AA0
+   Lila: #7965C1
+   Amarillo claro: #E3D095
+*/
+
+/* Fuente moderna y elegante */
+body, .acordeon-cuerpo, .acordeon-boton, .titulo-servicios, .intro-servicios {
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background: #0E2148;
+    font-size: 1.15rem;
+}
+
+.titulo-servicios {
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.intro-servicios {
+    color: #fff;
+    font-size: 1.25rem;
+    max-width: 900px;
+    margin: 0 auto 2.5rem auto;
+    line-height: 1.7;
+    background: rgba(14,33,72,0.7);
+    border-radius: 14px;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 2px 12px rgba(14,33,72,0.10);
+}
+
+.acordeon-servicios {
+    background: transparent;
+    border-radius: 18px;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.acordeon-item {
+    background: #483AA0;
+    border-radius: 16px;
+    margin-bottom: 32px;
+    box-shadow: 0 4px 24px rgba(14,33,72,0.15);
+    overflow: hidden;
+    border: none;
+}
+
+.acordeon-titulo {
+    margin: 0;
+}
+
+.acordeon-boton {
+    width: 100%;
+    text-align: left;
+    background: #483AA0;
+    color: #E3D095;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1.5rem 2rem;
+    border: none;
+    outline: none;
+    transition: background 0.2s, color 0.2s;
+    letter-spacing: 0.5px;
+}
+.acordeon-boton.collapsed {
+    background: #7965C1;
+    color: #fff;
+}
+.acordeon-boton:focus {
+    box-shadow: 0 0 0 2px #E3D09544;
+}
+
+.acordeon-cuerpo {
+    background: #fff;
+    color: #0E2148;
+    padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+    border-top: 2px solid #E3D095;
+    font-size: 1.18rem;
+}
+
+.descripcion-servicio {
+    font-size: 1.18rem;
+    color: #483AA0;
+    margin-bottom: 1.2rem;
+    font-weight: 500;
+}
+.precio-servicio span,
+.duracion-servicio span,
+.categoria-servicio span,
+.estado-servicio span {
+    color: #7965C1;
+    font-weight: 600;
+}
+.precio-servicio b {
+    color: #483AA0;
+    font-size: 1.15em;
+}
+.categoria-servicio {
+    margin-bottom: 0.8rem;
+}
+.categoria-servicio b {
+    color: #483AA0;
+    font-size: 1.1em;
+}
+.estado-servicio {
+    margin-bottom: 1.7rem;
+}
+.estado-activo {
+    color: #4CAF50;
+    font-weight: 600;
+}
+.estado-inactivo {
+    color: #f44336;
+    font-weight: 600;
+}
+.duracion-servicio {
+    margin-bottom: 1.7rem;
+}
+
+.boton-solicitar {
+    background: #E3D095;
+    color: #0E2148;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 0.9em 2.5em;
+    font-size: 1.18em;
+    border: none;
+    box-shadow: 0 2px 8px rgba(72,58,160,0.08);
+    transition: background 0.2s, color 0.2s, transform 0.15s;
+    letter-spacing: 0.5px;
+}
+.boton-solicitar:hover {
+    background: #7965C1;
+    color: #fff;
+    transform: translateY(-2px) scale(1.04);
+}
+
+.img-servicio {
+    max-width: 100%;
+    width: 260px;
+    height: 180px;
+    border-radius: 14px;
+    background: #E3D09522;
+    object-fit: cover;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 12px rgba(72,58,160,0.10);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    .acordeon-cuerpo {
+        padding: 1.2rem 0.7rem;
+    }
+    .img-servicio {
+        width: 100%;
+        height: 140px;
+    }
+    .titulo-servicios {
+        font-size: 2rem;
+    }
+    .intro-servicios {
+        font-size: 1.05rem;
+        padding: 1rem 0.7rem;
+    }
+    .acordeon-boton {
+        font-size: 1.1rem;
+        padding: 1rem 1rem;
+    }
+}
+
+.boton-accion-servicios {
+    background: linear-gradient(90deg, #483AA0 0%, #7965C1 60%, #E3D095 100%);
+    color: #0E2148;
+    font-weight: 700;
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 14px;
+    padding: 1.1em 2.8em;
+    margin-top: 2.5rem;
+    box-shadow: 0 4px 24px rgba(72,58,160,0.13);
+    letter-spacing: 0.5px;
+    transition: background 0.18s, color 0.18s, transform 0.15s;
+    text-shadow: 0 2px 8px #fff2;
+}
+.boton-accion-servicios:hover {
+    background: linear-gradient(90deg, #E3D095 0%, #7965C1 60%, #483AA0 100%);
+    color: #fff;
+    transform: translateY(-2px) scale(1.04);
+    text-shadow: 0 2px 12px #483AA044;
+}

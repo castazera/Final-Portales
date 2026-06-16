@@ -1,0 +1,2 @@
+ADMIN: admin@gmail.com - 12345678
+USER: briandrew@gmail.com - 12345678
